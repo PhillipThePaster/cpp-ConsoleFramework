@@ -14,6 +14,12 @@ void Cursor(const std::unordered_map<int, std::string>& tabList, int currentTab)
     setConsoleColor(7);
 }
 
+void text(const std::string& message, int color) {
+    setConsoleColor(color);
+    std::cout << message << "\n";
+    setConsoleColor(color);
+}
+
 void loadbar(int fillAmount, int barWidth) {
     int progress = barWidth * fillAmount / 100;
     std::cout << "[";
@@ -28,9 +34,9 @@ void loadbar(int fillAmount, int barWidth) {
 void Tabs(int currentTab) {
     system("cls");
     std::cout << "Tab " << currentTab << ".\n";
-
     if (currentTab == 2) {
         loadbar(30, 20);
+        text("Text Function", 4);
     }
 }
 int main() {
