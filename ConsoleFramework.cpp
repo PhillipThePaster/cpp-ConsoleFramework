@@ -20,6 +20,9 @@ void text(const std::string& message, int color) {
     setConsoleColor(color);
 }
 
+void ClearScreen() {
+    system("cls");
+}
 void loadbar(int fillAmount, int barWidth) {
     int progress = barWidth * fillAmount / 100;
     std::cout << "[";
@@ -35,8 +38,11 @@ void Tabs(int currentTab) {
     system("cls");
     std::cout << "Tab " << currentTab << ".\n";
     if (currentTab == 2) {
-        loadbar(30, 20);
+        loadbar(30, 10);
         text("Text Function", 4);
+    }
+    if (currentTab == 3) {
+        ClearScreen();
     }
 }
 int main() {
