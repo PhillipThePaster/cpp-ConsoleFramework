@@ -5,3 +5,4 @@
 - [x] Tab System
 - [x] Loading Bar {FillPercent, MaxCharacters}
 - [x] Text {"Text",Color}
+- [x] ClearScreen {its self explaintory}
