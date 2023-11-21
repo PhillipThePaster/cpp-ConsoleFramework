@@ -14,7 +14,7 @@ void Cursor(const std::unordered_map<int, std::string>& tabList, int currentTab)
     setConsoleColor(7);
 }
 
-void loadingBar(int fillAmount, int barWidth) {
+void loadbar(int fillAmount, int barWidth) {
     int progress = barWidth * fillAmount / 100;
     std::cout << "[";
     for (int i = 0; i < barWidth; ++i) {
@@ -30,7 +30,7 @@ void Tabs(int currentTab) {
     std::cout << "Tab " << currentTab << ".\n";
 
     if (currentTab == 2) {
-        loadingBar(30, 20);
+        loadbar(30, 20);
     }
 }
 int main() {
