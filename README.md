@@ -1,3 +1,3 @@
 conf. ConsoleFramework
-       - Tab System
-         - Loading Bar
+       -Tab System
+         -Loading Bar
