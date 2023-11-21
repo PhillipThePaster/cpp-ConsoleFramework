@@ -3,4 +3,5 @@
 
 # [Console Framework](ConsoleFramework.cpp)
 - [x] Tab System
-- [x] Loading Bar
+- [x] Loading Bar {FillPercent, MaxCharacters}
+- [x] Text {"Text",Color}
